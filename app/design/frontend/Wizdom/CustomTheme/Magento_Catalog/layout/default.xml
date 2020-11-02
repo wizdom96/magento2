@@ -1,0 +1,82 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<head>
+       <css src="css/bootstrap.min.css"/>
+       <css src="css/style.css"/>
+       <css src="css/responsive.css"/>
+       <css src="css/custom.css"/>
+       <css src="css/all.css"/>
+       <css src="css/baguetteBox.min.css"/>
+       <css src="css/bootstrap-select.css"/>
+       <css src="css/carousel-ticker.css"/>
+       <css src="css/jquery-ui.css"/>
+       <css src="css/responsive.css"/>
+       <css src="css/owl.carousel.min.css"/>
+       <css src="css/superslides.css"/>
+        <css src="css/code_animate.css"/>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" src_type="url"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js" src_type="url"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" src_type="url" />
+        <link src="http://fonts.googleapis.com/css?family=Montserrat" src_type="url" /> 
+            
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" src_type="url" />
+      <!--<script src="js/jquery-3.2.1.min.js" type="application/javascript"/>
+       <script src="js/jquery-ui.js" type="application/javascript"/>
+       <script src="js/jquery.nicescroll.min.js" type="application/javascript"/>
+       <script src="js/jquery.superslides.min.js" type="application/javascript"/>
+       <script src="js/popper.min.js" type="application/javascript"/>
+        <script src="js/baguetteBox.min.js" type="application/javascript"/>
+       <script src="js/bootsnav.js" type="application/javascript"/>
+       <script src="js/bootstrap.min.js" type="application/javascript"/>
+       <script src="js/form-validator.min.js" type="application/javascript"/>
+       <script src="js/images-loded.min.js" type="application/javascript"/>
+       <script src="js/inewsticker.js" type="application/javascript"/>
+       <script src="js/isotope.min.js" type="application/javascript"/> 
+        <script src="js/owl.carousel.min.js" type="application/javascript"/>
+        <script src="js/images-loded.min.js" type="application/javascript"/>
+      <script src="js/jquery.superslides.min.js" type="application/javascript"/>
+       <script src="js/custom.js" type="application/javascript"/>
+
+       <script src="js/owl.carousel.min.js" type="application/javascript"/>
+
+--> 
+    </head>
+    <body>
+     
+            <move element="logo" destination="catalog.topnav"/>
+            <referenceBlock name="breadcrumbs" remove="true"/>
+            <referenceBlock name="form.subscribe" remove="true"/>
+            
+            <referenceBlock name="footer_links" remove="true"/>
+            <referenceBlock name="catalog.compare.sidebar" remove="true"/>
+            <referenceBlock name="wishlist_sidebar" remove="true" />
+             <move element="minicart" destination="catalog.topnav" after="-"/>
+            <move element="top.search" destination="minicart" before="-"/>
+
+
+<referenceContainer name="header.container">
+            <referenceBlock name="header.panel.wrapper" remove="true" />
+            <referenceBlock name="header.content" remove="true" />
+            
+    </referenceContainer>
+        
+
+            <referenceContainer name="header.container">
+                <block class="Magento\Cms\Block\Block" name="top-nav">
+                     <arguments>
+                      <argument name="block_id" xsi:type="string">top-nav</argument>
+                     </arguments>
+                 </block>
+             </referenceContainer>
+
+ <referenceContainer name="footer">
+             <block class="Magento\Cms\Block\Block" name="footer-links">
+                 <arguments>
+                    <argument name="block_id" xsi:type="string">footer-links</argument>
+                 </arguments>
+             </block>
+    </referenceContainer>
+
+            </body>
+</page>

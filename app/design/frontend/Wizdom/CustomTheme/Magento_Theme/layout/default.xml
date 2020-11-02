@@ -1,0 +1,35 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<head>
+
+      
+      <!--
+            
+    <css src="css/jquery-ui.css"/>
+        <css src="css/bootstrap.min.css"/>
+       <css src="css/style.css"/>
+       <css src="css/responsive.css"/>
+       <css src="css/custom.css"/>
+         <css src="css/all.css"/>
+       <css src="css/baguetteBox.min.css"/>
+       <css src="css/bootstrap-select.css"/>
+       <css src="css/carousel-ticker.css"/>
+             <css src="css/responsive.css"/>
+       <css src="css/owl.carousel.min.css"/>
+       <css src="css/superslides.css"/>
+        <css src="css/code_animate.css"/>
+             --> 
+       
+       
+    </head>
+    <body>
+
+            <referenceBlock name="page.main.title" remove="true" />
+           <referenceBlock name="logo">
+                 <arguments>
+                    <argument name="logo_img_width" xsi:type="number">200</argument>
+                    <argument name="logo_img_height" xsi:type="number">81</argument>
+                    <argument name="logo_src" xsi:type="string">pub/static/frontend/Wizdom/CustomTheme/en_US/images/logo.png</argument>
+                </arguments>
+        </referenceBlock>
+ </body> 
+</page>
